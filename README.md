@@ -14,3 +14,6 @@ OS_INTERFACE=""
 OS_ENDPOINT_TYPE=""
 
 ```
+
+preview
+![page](./DOCS/asset/images/openstack-page.png)
