@@ -15,5 +15,17 @@ OS_ENDPOINT_TYPE=""
 
 ```
 
+# manual start webserver
+```
+virtualenv -p python3 env
+source ./env/bin/activate
+pip install -r ./requirements.txt
+
+cd ./openstackclustermonitoring
+python manage.py runserver
+
+```
+
+
 preview
 ![page](./DOCS/asset/images/openstack-page.png)
