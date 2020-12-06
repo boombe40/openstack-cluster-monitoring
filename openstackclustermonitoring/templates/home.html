@@ -1,0 +1,34 @@
+{% extends "base_default.html" %}
+
+{% block content %}
+  <h1>Openstack cluster monitoring: Openstack service</h1>
+  <p>Welcome to Openstack cluster monitoring, a website developed by <em>boombe40</em>!</p>
+  <h3> Compute node </h3>
+  <ul>    
+    {% for key,value in hypervisor.items %}
+        <li><h6>hypervisor {{ key }} state is {{ value }}</h6></li>
+    {% endfor %}
+  </ul>
+  <p></p>
+  <h3> NOVA services  </h3>
+  <ul>    
+    {% for key,value in nova_services.items %}
+        <li><h6>services {{ key }} state is {{ value }}</h6></li>
+    {% endfor %}
+  </ul>
+  <p></p>
+  <h3> CINDER services  </h3>
+  <ul>    
+    {% for key,value in cinder_services.items %}
+        <li><h6>services {{ key }} state is {{ value }}</h6></li>
+    {% endfor %}
+  </ul>
+
+  <h3> NEUTRON services  </h3>
+  <ul>    
+    {% for key,value in neutron_services.items %}
+        <li><h6>services {{ key }} state is {{ value }}</h6></li>
+    {% endfor %}
+  </ul>
+
+{% endblock %}
